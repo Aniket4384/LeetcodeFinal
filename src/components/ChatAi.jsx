@@ -36,7 +36,7 @@ function ChatAi({ problem }) {
         setStreamingText('');
 
         try {
-            const response = await fetch("http://localhost:3000/ai/chat", {
+            const response = await fetch("https://backend-1-55n9.onrender.com/ai/chat", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
